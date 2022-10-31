@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+}
+
+img {
+    width: 90%;
+    height: 90%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 1000px;
+
+    font-family: sans-serif;
+
+    background-color: rgb(81, 33, 130);
+}
+
+.header_container {
+    background-color: brown;
+    padding: 30px;
+    margin: 0;
+}
+
+.header_container p {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn,
+#btn-1,
+#btn-2,
+#btn-4 {
+    position: relative;
+    top: 50px;
+
+    width: 230px;
+    height: 70px;
+    border: 1px solid rgb(156, 156, 226);
+    border-radius: 5px;
+    background-color: orange;
+    margin-top: 15px;
+
+    color: #fff;
+    font-size: 20px;
+}
+
+#btn,
+#btn-1,
+#btn-2,
+#btn-4 {
+    box-shadow: 5px 7px 4px 1px rgba(44, 97, 45, 0.4);
+}
+
+#btn:active,
+#btn-1:active,
+#btn-2:active,
+#btn-4:active {
+    box-shadow: 2px 3px 4px 1px rgba(70, 174, 73, 0.4);
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.exit {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.exit span {
+    display: block;
+    content: "";
+    width: 45px;
+    height: 2px;
+    background-color: #fff;
+}
+
+.exit span:first-child {
+    /* transform: rotate(45deg); */
+    position: relative;
+    left: 10px;
+}
+
+.exit span:nth-child(2) {
+    transform: rotate(-90deg);
+    position: relative;
+    right: 10px;
+}
+
+.exit:hover {
+    transform: rotateZ(135deg);
+    transition: transform 0.3s;
+}
+
+.exit:active {
+    opacity: .8;
+}
+
+.hidden {
+    display: none;
+}
+
+._inactive {
+    display: none;
+}
+
+.chess_container {
+    display: block;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 496px;
+    height: 495.5px;
+    border: 4px solid black;
+}
+
+.input-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+
+.exit-container {
+    position: relative;
+    top: 80px;
+    height: 505px;
+}
+
+
+/*------------------------------------------------------------------------*/
+/* Стилизация ячеек шахматной доски */
+
+.cell {
+    border: 1px solid black;
+    content: "";
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.krest {
+    width: 50%;
+    height: 50%;
+
+}
